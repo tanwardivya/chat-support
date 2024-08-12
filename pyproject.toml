@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools >= 61.0","wheel>=0.42.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "chat_support"
+requires-python = ">= 3.11.3"
+version = "0.1.0"
+description = "A Python package for managing and suggesting recipes."
+authors = [
+    { name = "Divya Tanwar", email = "divya.tanwar@outlook.com" },
+]
+readme = "README.md"
+keywords = ["chat", "faqs", "llm"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # List your project dependencies here
+    # For example: "requests>=2.25.1",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "python-multipart>=0.0.9",
+    "PyJWT>=2.8.0",
+    "loguru==0.7.2",
+    "pydantic[email]",
+    "passlib==1.7.4",
+    "bcrypt==4.0.1",
+    "gunicorn",
+    "expiringdict==1.2.2",
+    "boto3==1.34.157",
+    "streamlit==1.37.1",
+    "python-dotenv",
+    "langchain==0.2.12",
+    "langchain-community==0.2.11",
+    "langchain-core==0.2.29",
+    "langchain-aws",
+    "faiss-cpu==1.8.0.post1",
+    "watchdog>=2.1.5"
+]
+
+[project.urls]
+Homepage = "https://example.com/chat_support"
+Repository = "https://github.com/yourusername/chat_support"
+Documentation = "https://chat_support.readthedocs.io"
